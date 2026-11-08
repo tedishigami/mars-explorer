@@ -24,7 +24,7 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci || npm install
-      - run: npm run build -- --base=/${{ github.event.repository.name }}/
+      - run: npm run build:pages
         env:
           VITE_CESIUM_ION_TOKEN: ${{ secrets.VITE_CESIUM_ION_TOKEN }}
       - uses: actions/upload-pages-artifact@v3

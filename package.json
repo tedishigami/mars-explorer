@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:pages": "tsc && vite build --base=/mars-explorer/ && node scripts/fix-cesium-path.mjs"
   },
   "dependencies": {
     "cesium": "^1.120.0",
