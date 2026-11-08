@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.DS_Store
+
+# Secrets et variables d'environnement
+.env
+.env.*
+!.env.example
+
+# Fichiers temporaires et sauvegardes
+*.bak
+*.bak.*
+
+# Outils et données de travail (trop lourds ou inutiles pour le site)
+cesium-terrain-builder/
+data-pipeline/
+public/terrain-mars/
+*.bak*
